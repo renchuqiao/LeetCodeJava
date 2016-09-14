@@ -1,8 +1,13 @@
-package medium;
+package medium.array;
 
 /**
- * Created by rachelren on 12/18/15.
- * Leetcode Problem Rotate Image
+ * 48. Rotate Image
+ *
+ * You are given an n x n 2D matrix representing an image.
+ *
+ * Rotate the image by 90 degrees (clockwise).
+ *
+ * Note: This solution is a in-place solution
  */
 public class Rotate {
     public void rotate(int[][] matrix){
