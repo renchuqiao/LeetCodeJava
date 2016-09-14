@@ -92,8 +92,8 @@ public class AddAndSearchWord {
 
     public static void main(String[] args) {
         AddAndSearchWord addAndSearchWord = new AddAndSearchWord();
-        addAndSearchWord.addWord("ab");
-        addAndSearchWord.addWord("abc");
-        System.out.println(addAndSearchWord.search("...."));
+        addAndSearchWord.addWord("at");
+        addAndSearchWord.addWord("bat");
+        System.out.println(addAndSearchWord.search(".at"));
     }
 }
