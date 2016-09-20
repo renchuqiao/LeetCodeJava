@@ -22,25 +22,44 @@ import medium.dynamicProgramming.PerfectSqures;
  */
 public class ReverseWordsInAString {
     public String reverseWords(String s) {
-        char[] chars = s.toCharArray();
+
+        char[] chars = s.trim().toCharArray();
+
+        if (chars.length == 0) {
+            return "";
+        }
+
+        //truncate spaces in between
+        //since we have already truncate leading spaces, chars[0] is always letter
+        int slow = 1;
+        int fast = 1;
+        while (fast < chars.length) {
+            if (chars[fast] == ' ' && chars[fast - 1] == ' ') {
+                fast++;
+            } else {
+                chars[slow++] = chars[fast++];
+            }
+        }
+
         //reverse the whole string
-        chars = reverseString(chars, 0, chars.length - 1);
+        chars = reverseString(chars, 0, slow - 1);
 
         //reverse each word
         int i = 0;
-        while (i < chars.length) {
+        while (i < slow) {
             int j = i;
-            while (j < chars.length) {
+            while (j < slow) {
                 if (chars[j] == ' ') {
                     break;
                 }
                 j++;
             }
             reverseString(chars, i, j - 1);
-            i = j+1;
+            //find next non-space
+            i = j + 1;
         }
 
-        return new String(chars);
+        return new String(chars, 0, slow);
     }
 
     private char[] reverseString(char[] chars, int start, int end) {
@@ -56,6 +75,6 @@ public class ReverseWordsInAString {
 
     public static void main(String[] args) {
         ReverseWordsInAString reverseWordsInAString = new ReverseWordsInAString();
-        System.out.println(reverseWordsInAString.reverseWords("the sky is blue"));
+        System.out.println(reverseWordsInAString.reverseWords("the       sky is blue"));
     }
 }
