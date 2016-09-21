@@ -1,4 +1,4 @@
-package hard;
+package hard.string;
 
 import java.util.HashMap;
 import java.util.Map;
