@@ -17,6 +17,17 @@ import java.util.Map;
  * Assumption:
  * If there is no such window in S that covers all characters in T, return the empty string "".
  * If there are multiple such windows, you are guaranteed that there will always be only one unique minimum window in S.
+ *
+ * Solution:
+ * Greedy algorithm
+ * Find a window and try to minimize the window size. Move to the right. If smaller window exists, update window. If not,
+ * the window we have found will be the one to return.
+ *
+ * In details
+ * 1. Find the first window which contains all letters in T
+ * 2. Move begin pointer to its right until window doesn't include all letters in T. (use hashmap to check)
+ * 3. Move window further right. (add one letter right and remove one letter left).
+ * 4. If window contains all letters in T, try to move begin pointer to find the smallest window. If not, continue move to the right.
  */
 public class MinimumWindowSubstring {
     public String minWindow(String s, String t) {
