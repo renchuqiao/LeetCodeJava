@@ -72,6 +72,7 @@ public class NumberOfIslands {
         }
 
         int[] unionFind = new int[m * n];
+        //set 0 to be a number other than 0; if not specified, every entry of array will be initiated as 0.
         unionFind[0] = Integer.MAX_VALUE;
 
         //first iterate through every entry in the m * n matrix to construct union-find structure.
