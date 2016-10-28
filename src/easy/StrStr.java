@@ -36,29 +36,37 @@ public class StrStr {
             return -1;
         }
 
+        if (needle.length() == 0) {
+            return 0;
+        }
+
         //calculate the hash value of needle
-        long hashNeedle = 0;
-        for (int i = 0; i < needle.length(); i++) {
-            hashNeedle = hashNeedle * 26  + (long) needle.charAt(i) - 'a';
+        long q = 101; //large prime
+        long p = 23;  //small prime
+        long hashNeedle = needle.charAt(0) % q;
+        long rm = 1;  //used when remove a character below
+        for (int i = 1; i < needle.length(); i++) {
+            hashNeedle = (hashNeedle * p  + (long) needle.charAt(i)) % q;
+            rm = (rm * p) % q;
         }
 
 
         long hashHaystack = 0;
         for (int i = 0; i < needle.length(); i++) {
-            hashHaystack = hashHaystack * 26 + (long) (haystack.charAt(i) - 'a');
+            hashHaystack = (hashHaystack * p + (long) haystack.charAt(i)) % q;
         }
 
 
-        if (hashHaystack == hashNeedle) {
+        if (hashHaystack == hashNeedle && check(haystack, needle, 0)) {
             return 0;
         }
 
         for (int i = needle.length(); i < haystack.length(); i++) {
-            hashHaystack -= (long) (haystack.charAt(i - needle.length()) - 'a') * (long) Math.pow(26, needle.length() - 1);
-            hashHaystack *= 26;
-            hashHaystack += (long) (haystack.charAt(i) - 'a') ;
+            //Note: when we subtract the first character, we need to add q to avoid negative number
+            hashHaystack = (hashHaystack + q - rm * (long) haystack.charAt(i - needle.length()) % q) % q;
+            hashHaystack = ((hashHaystack * p + (long) haystack.charAt(i)) % q);
 
-            if (hashHaystack == hashNeedle) {
+            if (hashHaystack == hashNeedle && check(haystack, needle, i - needle.length() + 1)) {
                 return i - needle.length() + 1;
             }
         }
@@ -66,9 +74,18 @@ public class StrStr {
         return -1;
     }
 
+    private boolean check(String haystack, String needle, int start) {
+        for (int i = 0; i < needle.length(); i++) {
+            if (haystack.charAt(i + start) != needle.charAt(i)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
         StrStr s = new StrStr();
-        int i = s.strStr("mississippi", "issi");
+        int i = s.strStr("", "");
         System.out.println(i);
     }
 }
