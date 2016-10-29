@@ -59,7 +59,7 @@ package hard.string;
  *
  * Hence, we just need to add reverse(5...input length - 1) to the original string to form the shortest palindrome.
  *
- *
+ * KMP reference: https://www.topcoder.com/community/data-science/data-science-tutorials/introduction-to-string-searching-algorithms/
  */
 public class ShortestPalindrom {
     public String shortestPalindrome(String s) {

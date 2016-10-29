@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08141338-c663-41ef-b4ac-3baaaa9fad1d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hard/string/ShortestPalindrom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hard/string/ShortestPalindrom.java" afterPath="$PROJECT_DIR$/src/hard/string/ShortestPalindrom.java" />
     </list>
     <ignored path="Leetcode_Java.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,31 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MinimumWindowSubstring.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hard/string/MinimumWindowSubstring.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="133" selection-start-line="29" selection-start-column="133" selection-end-line="29" selection-end-column="133" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LongestSubstringWithAtMostTwoDistinctCharacters.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hard/string/LongestSubstringWithAtMostTwoDistinctCharacters.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ShortestPalindrom.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hard/string/ShortestPalindrom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.47334412">
-              <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7590206">
+              <caret line="61" column="133" selection-start-line="61" selection-start-column="133" selection-end-line="61" selection-end-column="133" />
               <folding />
             </state>
           </provider>
@@ -999,7 +978,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19527364" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19527364" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1353,30 +1332,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/easy/StrStr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="99" selection-start-line="64" selection-start-column="99" selection-end-line="64" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hard/string/MinimumWindowSubstring.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="133" selection-start-line="29" selection-start-column="133" selection-end-line="29" selection-end-column="133" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hard/string/LongestSubstringWithAtMostTwoDistinctCharacters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33279485">
@@ -1385,10 +1340,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/hard/string/LongestSubstringWithAtMostTwoDistinctCharacters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.024484536">
+          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hard/string/MinimumWindowSubstring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.024484536">
+          <caret line="29" column="133" selection-start-line="29" selection-start-column="133" selection-end-line="29" selection-end-column="133" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/easy/StrStr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="99" selection-start-line="64" selection-start-column="99" selection-end-line="64" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hard/string/ShortestPalindrom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.47334412">
-          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7590206">
+          <caret line="61" column="133" selection-start-line="61" selection-start-column="133" selection-end-line="61" selection-end-column="133" />
           <folding />
         </state>
       </provider>
