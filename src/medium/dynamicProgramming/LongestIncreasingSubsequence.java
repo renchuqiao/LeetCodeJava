@@ -89,6 +89,7 @@ public class LongestIncreasingSubsequence {
             }
         }
 
+        //Here we want to add equals case if we skip the while loop
         if (arr[left] >= target) {
             arr[left] = target;
             return left;
