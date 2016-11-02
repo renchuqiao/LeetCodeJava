@@ -61,7 +61,7 @@ package hard.string;
  *
  * KMP reference: https://www.topcoder.com/community/data-science/data-science-tutorials/introduction-to-string-searching-algorithms/
  */
-public class ShortestPalindrom {
+public class ShortestPalindrome {
     public String shortestPalindrome(String s) {
         String temp = s + "#" + reverse(s.toCharArray(), 0, s.length() - 1);
         int[] table = getTable(temp);
@@ -127,7 +127,7 @@ public class ShortestPalindrom {
     }
 
     public static void main(String[] args) {
-        ShortestPalindrom s = new ShortestPalindrom();
+        ShortestPalindrome s = new ShortestPalindrome();
         System.out.println(s.shortestPalindrome("aacecaaa"));
     }
 }
