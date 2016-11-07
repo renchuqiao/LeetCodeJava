@@ -14,6 +14,13 @@ package medium.dynamicProgramming;
  * Example,
  * Given encoded message "12", it could be decoded as "AB" (1 2) or "L" (12).
  * The number of ways decoding "12" is 2.
+ *
+ * Solution:
+ * Dynamic Programming
+ * M[i] stands for the number of expressions
+ * M[i] = M[i - 1] (express i as a letter at self when 0 < i < 10)
+ *      + M[i - 2] (express i with i - 1 when 10 <= substring(i-1, i) <= 26)
+ *
  */
 public class numDecodings {
     public int numDecodings(String s) {
