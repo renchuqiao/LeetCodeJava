@@ -1,4 +1,4 @@
-package medium.string;
+package medium.permutation;
 
 /**
  * 31. Next Permutation
